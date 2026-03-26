@@ -75,7 +75,7 @@ jobs:
           set -euo pipefail
           VERSION="${GITHUB_REF_NAME#v}"
           echo "Publishing version ${VERSION} to ClawHub..."
-          clawhub publish . --token "$CLAWHUB_TOKEN"
+          clawhub publish . --version "$VERSION" --slug fatsecret
 
   github-release:
     name: Create GitHub Release
