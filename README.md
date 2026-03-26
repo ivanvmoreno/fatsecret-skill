@@ -29,17 +29,15 @@ Copy the `fatsecret/` skill folder to one of:
 1. Install the Python package:
 
 ```
-pip install fatsecret
+pip install pyfatsecret
 ```
 
 2. Set environment variables:
 
 | Variable | Required | Description |
 |---|---|---|
-| `FATSECRET_CONSUMER_KEY` | Yes | API consumer key |
-| `FATSECRET_CONSUMER_SECRET` | Yes | API consumer secret |
-| `FATSECRET_ACCESS_TOKEN` | No | OAuth access token (for user-specific calls) |
-| `FATSECRET_ACCESS_SECRET` | No | OAuth access secret (for user-specific calls) |
+| `FATSECRET_CLIENT_ID` | Yes | OAuth 2.0 client ID |
+| `FATSECRET_CLIENT_SECRET` | Yes | OAuth 2.0 client secret |
 
 Register for API credentials at [platform.fatsecret.com/api](https://platform.fatsecret.com/api/).
 

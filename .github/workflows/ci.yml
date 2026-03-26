@@ -90,7 +90,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install fatsecret
+        run: pip install pyfatsecret
 
       - name: Syntax check
         run: python3 -c "import ast; ast.parse(open('scripts/fs_runner.py').read())"
@@ -111,7 +111,7 @@ jobs:
                      recipes_add_favorite recipes_delete_favorite recipes_get_favorites \
                      exercises_get exercise_entries_get exercise_entries_get_month \
                      exercise_entries_commit_day exercise_entries_save_template \
-                     exercise_entry_edit profile_create profile_get profile_get_auth \
+                     exercise_entry_edit profile_create profile_get_auth \
                      weight_update weights_get_month; do
             python3 scripts/fs_runner.py "$cmd" --help > /dev/null
             echo "OK: $cmd"
