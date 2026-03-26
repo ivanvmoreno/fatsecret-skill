@@ -12,7 +12,7 @@ Search foods, look up nutrition, log meals, track weight, browse recipes, and ma
 ### Via ClawHub
 
 ```
-clawhub install fatsecret
+clawhub install fatsecret-api
 ```
 
 ### Manual

@@ -1,5 +1,5 @@
 ---
-name: fatsecret
+name: fatsecret-api
 description: Search foods, look up nutrition, log meals, track weight, browse recipes, and manage exercises via the FatSecret API.
 version: 1.0.0
 homepage: https://github.com/ivanvmoreno/fatsecret-skill
