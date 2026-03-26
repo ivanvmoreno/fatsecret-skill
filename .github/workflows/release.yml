@@ -68,9 +68,10 @@ jobs:
       - name: Install ClawHub CLI
         run: npm install -g clawhub@latest
 
+      - name: Authenticate with ClawHub
+        run: clawhub login --token "${{ secrets.CLAWHUB_TOKEN }}"
+
       - name: Publish skill
-        env:
-          CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
         run: |
           set -euo pipefail
           VERSION="${GITHUB_REF_NAME#v}"
